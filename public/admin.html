@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Enquiries | Nexora Technologies admin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+body{background:var(--grey)}
+.ad-top{background:#111;color:#fff}.ad-top .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.ad-top h1{font-size:15px;letter-spacing:.1em}
+.login{max-width:420px;margin:80px auto;background:var(--bg);padding:32px;border:1px solid var(--line)}
+.login h2{font-size:20px;margin-bottom:8px}.login p{color:var(--muted);margin:0 0 18px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 18px}.tools input,.tools select{width:auto;flex:1;min-width:150px}
+.cnt{color:var(--muted);font-size:14px;margin-bottom:14px}
+.msg{background:var(--bg);border:1px solid var(--line);padding:20px 22px;margin-bottom:12px;display:grid;gap:8px}
+.msg.done{opacity:.6}
+.mh{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.mh b{font-size:17px}.mh time{color:var(--muted);font-size:13px}
+.tg{display:inline-block;background:#111;color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;margin-right:8px}
+.tg.n{background:var(--acc);color:#111}
+.kv{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:14px;color:var(--muted)}.kv b{color:var(--ink)}
+.msg pre{margin:0;white-space:pre-wrap;font:inherit;font-size:15px}
+.ma{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}.ma a,.ma button{font-size:13px}
+</style>
+</head>
+<body>
+<div class="ad-top"><div class="wrap"><h1>NEXORA TECHNOLOGIES · ENQUIRIES</h1><button class="btn sm" id="out" hidden>Sign out</button></div></div>
+<div class="wrap">
+  <form class="login fm" id="lg"><h2>Admin sign in</h2><p>Enter the ADMIN_TOKEN you set in Netlify.</p>
+    <input type="password" id="tk" placeholder="Admin token" autocomplete="current-password" aria-label="Admin token" required>
+    <button class="btn k" type="submit">View enquiries</button><div class="ok" id="lgm" role="status"></div></form>
+  <div id="app" hidden>
+    <div class="tools"><input id="s" type="search" placeholder="Search name, email, phone, message…" aria-label="Search">
+      <select id="ty" aria-label="Type"><option value="">All types</option><option value="quote">Quotes</option><option value="consultation">Consultations</option><option value="survey">Site surveys</option><option value="support">Support</option></select>
+      <select id="st" aria-label="Status"><option value="">All statuses</option><option value="new">New</option><option value="done">Done</option></select>
+      <button class="btn sm k" id="rf">Refresh</button></div>
+    <div class="cnt" id="cnt"></div><div id="list"></div>
+  </div>
+</div>
+<script src="assets/admin.js"></script>
+</body>
+</html>
+
+
+
+

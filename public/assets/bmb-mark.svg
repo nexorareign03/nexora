@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Nexora Technologies</title>
+  <rect x="3" y="3" width="94" height="94" rx="22" fill="#111820"/>
+  <path d="M18 22h45a20 20 0 0 1 12 36 18 18 0 0 1-11 32H18z" fill="#7CC900"/>
+  <path d="M33 36h27a7 7 0 0 1 0 14H33zm0 28h29a7 7 0 0 1 0 14H33z" fill="#111820"/>
+  <circle cx="81" cy="24" r="5" fill="#7CC900"/><path d="M81 34v12" stroke="#7CC900" stroke-width="3" stroke-linecap="round"/>
+</svg>
